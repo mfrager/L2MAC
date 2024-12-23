@@ -15,8 +15,18 @@ openai_models = {  # Updated from https://platform.openai.com/docs/models/contin
         "training_data": "",
     },
     "granite3.1-dense:8b": {
-        "description": "qwen2.5-coder:14b",
+        "description": "granite3.1-dense:8b",
         "context_window": 128_000,
+        "training_data": "",
+    },
+    "llama3.1:8b": {
+        "description": "llama3.1:8b",
+        "context_window": 128_000,
+        "training_data": "",
+    },
+    "gemma2:9b" {
+        "description": "gemma2:9b",
+        "context_window": 8_192,
         "training_data": "",
     },
     "gpt-4o": {
