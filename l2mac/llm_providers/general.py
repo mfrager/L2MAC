@@ -36,9 +36,7 @@ def setup_chat_rate_limiter_internal(config: dict):
         token_limit = model_details["TPM"]
     elif config.llm.api_type == ApiType.openai:
         model = config.llm.model
-        model_details = find_best_match(
-            openai_rate_limits_per_tier_per_model[config.llm_settings.rate_limit_tier], model
-        )
+        model_details = openai_rate_limits_per_tier_per_model["tier3"]["gpt-4-turbo"]
         request_limit = model_details["RPM"]
         token_limit = model_details["TPM"]
     else:
