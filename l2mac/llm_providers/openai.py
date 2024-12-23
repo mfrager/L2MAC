@@ -9,6 +9,16 @@ P50K_ENCODER = tiktoken.get_encoding("p50k_base")
 
 
 openai_models = {  # Updated from https://platform.openai.com/docs/models/continuous-model-upgrades on 16th April 2024
+    "qwen2.5-coder:14b": {
+        "description": "qwen2.5-coder:14b",
+        "context_window": 32_000,
+        "training_data": "",
+    },
+    "granite3.1-dense:8b": {
+        "description": "qwen2.5-coder:14b",
+        "context_window": 128_000,
+        "training_data": "",
+    },
     "gpt-4o": {
         "description": "GPT-4o ('o' for 'omni') is our versatile, high-intelligence flagship model.",
         "context_window": 128_000,
