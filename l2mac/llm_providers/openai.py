@@ -9,6 +9,11 @@ P50K_ENCODER = tiktoken.get_encoding("p50k_base")
 
 
 openai_models = {  # Updated from https://platform.openai.com/docs/models/continuous-model-upgrades on 16th April 2024
+    "gpt-4o": {
+        "description": "GPT-4o ('o' for 'omni') is our versatile, high-intelligence flagship model.",
+        "context_window": 128_000,
+        "training_data": "Up to Aug 2024",
+    },
     "gpt-4-turbo": {
         "description": "New GPT-4 Turbo with Vision. The latest GPT-4 Turbo model with vision capabilities. Vision requests can now use JSON mode and function calling. Currently points to gpt-4-turbo-2024-04-09.",
         "context_window": 128_000,
