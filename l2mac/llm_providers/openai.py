@@ -24,7 +24,7 @@ openai_models = {  # Updated from https://platform.openai.com/docs/models/contin
         "context_window": 128_000,
         "training_data": "",
     },
-    "gemma2:9b" {
+    "gemma2:9b": {
         "description": "gemma2:9b",
         "context_window": 8_192,
         "training_data": "",
