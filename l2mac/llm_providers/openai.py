@@ -24,8 +24,8 @@ openai_models = {  # Updated from https://platform.openai.com/docs/models/contin
         "context_window": 128_000,
         "training_data": "",
     },
-    "llama3.3-70b": {
-        "description": "llama3.3-70b",
+    "llama-3.3-70b": {
+        "description": "llama-3.3-70b",
         "context_window": 8_192,
         "training_data": "",
     },
